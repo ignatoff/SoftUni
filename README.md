@@ -1,2 +1,2 @@
 # SoftUni
-My homework and projects
+Homework and projects
