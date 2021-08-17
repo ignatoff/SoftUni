@@ -56,27 +56,15 @@ class ChristmasDinner {
         let resultStr = ''
         for(let guest in this.guests) {
             let dishEaten = this.guests[guest]
-            resultStr+=`${guest} will eat ${dishEaten}, which consists of `
+            resultStr += `${guest} will eat ${dishEaten}, which consists of `
         for (let dishRow of this.dishes) {
-            if (dishRow.recipeName===dishEaten) {
-                resultStr+=dishRow.productsList.join(", ") + "\n"
+            if (dishRow.recipeName === dishEaten) {
+                resultStr += dishRow.productsList.join(", ") + "\n"
             }
         }
         }
-        return resultStr.trim()
- 
+        return resultStr.trim() 
     }
-/*
-    showAttendance() {
-        let result = '';
-        Object.entries(this.guests)
-            .forEach(([name, dish]) => {
-                const products = this.dishes.find(d => d.recipeName == dish);
-                result += `${name} will eat ${dish}, which consists of ${products.productsList.join(', ')}\n`
-            });
-
-        return result.trim();
-    }*/
 }
 
 let dinner = new ChristmasDinner(300);
