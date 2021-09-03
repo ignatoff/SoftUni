@@ -1,2 +1,2 @@
 # SoftUni
-Homework and projects
+Homework and exams.
